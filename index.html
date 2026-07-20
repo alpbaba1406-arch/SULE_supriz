@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mutlu Yıllar Şule! 💜</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: radial-gradient(circle at center, #1b1236 0%, #080512 100%);
+            color: #f4f2fa;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        /* 1. BÖLÜM: GİRİŞ */
+        .section-intro {
+            min-height: 85vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .stitch-container {
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .stitch-svg {
+            width: 160px;
+            height: 160px;
+            filter: drop-shadow(0 0 15px rgba(147, 112, 219, 0.6));
+            animation: float 4s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            color: #e6e0f8;
+            margin-bottom: 10px;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        .subtitle {
+            color: #b3a7d6;
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+        }
+
+        .btn-magic {
+            background: linear-gradient(135deg, #7b2cbf 0%, #9d4edd 100%);
+            color: #ffffff;
+            border: none;
+            padding: 15px 35px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 50px;
+            cursor: pointer;
+            box-shadow: 0 5px 20px rgba(157, 78, 221, 0.4);
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-magic:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(157, 78, 221, 0.6);
+            background: linear-gradient(135deg, #8a3ab9 0%, #a85be3 100%);
+        }
+
+        /* 2. BÖLÜM: ANİMASYON DÜNYASI VE KÜLT ÖNERİLER */
+        .section-content {
+            padding-top: 60px;
+            border-top: 1px solid rgba(147, 112, 219, 0.2);
+            margin-top: 40px;
+        }
+
+        .question-box {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(147, 112, 219, 0.2);
+            padding: 30px 25px;
+            border-radius: 20px;
+            margin-bottom: 40px;
+            backdrop-filter: blur(10px);
+            text-align: left;
+        }
+
+        .question-box h3 {
+            color: #d8bbff;
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .question-box p {
+            color: #c3b9df;
+            line-height: 1.6;
+            font-size: 1.05rem;
+        }
+
+        .movie-card {
+            background: rgba(123, 44, 191, 0.1);
+            border-left: 4px solid #9d4edd;
+            padding: 20px;
+            border-radius: 0 15px 15px 0;
+            text-align: left;
+            margin-bottom: 40px;
+        }
+
+        .movie-card h4 {
+            color: #e6e0f8;
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+        }
+
+        .movie-card p {
+            color: #b3a7d6;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        /* 3. BÖLÜM: ZARİF KUTLAMA NOTU */
+        .section-message {
+            padding: 50px 25px;
+            background: linear-gradient(180deg, rgba(123, 44, 191, 0.15) 0%, rgba(8, 5, 18, 0) 100%);
+            border-radius: 24px;
+            border: 1px solid rgba(157, 78, 221, 0.25);
+            margin-top: 20px;
+            box-shadow: inset 0 0 20px rgba(157, 78, 221, 0.1);
+        }
+
+        .letter-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #ebdfff;
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+
+        .signature {
+            text-align: right;
+            font-weight: 600;
+            color: #d8bbff;
+            font-size: 1.1rem;
+            margin-top: 25px;
+        }
+
+        footer {
+            margin-top: 60px;
+            font-size: 0.85rem;
+            color: #635885;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- 1. BÖLÜM: GİRİŞ -->
+        <div class="section-intro" id="intro">
+            <div class="stitch-container">
+                <svg class="stitch-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="55" r="30" fill="#2b7bb9"/>
+                    <ellipse cx="50" cy="58" rx="26" ry="22" fill="#4fa3df"/>
+                    <path d="M25 45 C5 35 2 15 12 18 C22 20 28 35 30 45 Z" fill="#2b7bb9"/>
+                    <path d="M23 43 C8 36 6 22 14 24 C22 26 26 36 28 43 Z" fill="#f3a3b4"/>
+                    <path d="M75 45 C95 35 98 15 88 18 C78 20 72 35 70 45 Z" fill="#2b7bb9"/>
+                    <path d="M77 43 C92 36 94 22 86 24 C78 26 74 36 72 43 Z" fill="#f3a3b4"/>
+                    <ellipse cx="38" cy="50" rx="7" ry="9" fill="#1b2d4a"/>
+                    <ellipse cx="62" cy="50" rx="7" ry="9" fill="#1b2d4a"/>
+                    <circle cx="40" cy="47" r="2" fill="#ffffff"/>
+                    <circle cx="60" cy="47" r="2" fill="#ffffff"/>
+                    <ellipse cx="50" cy="56" rx="6" ry="4" fill="#153658"/>
+                    <path d="M42 64 Q50 69 58 64" stroke="#153658" stroke-width="1.5" fill="none"/>
+                </svg>
+            </div>
+            <h1>Mutlu Yıllar Şule!</h1>
+            <p class="subtitle">Senin için küçük bir doğum günü sürprizi...</p>
+            <a href="#content" class="btn-magic">Buraya Tıkla Panpi 💜</a>
+        </div>
+
+        <!-- 2. BÖLÜM: KÜLT ANİMASYON DÜNYASI -->
+        <div class="section-content" id="content">
+            <div class="question-box">
+                <h3><span>📚</span> Ufak Bir Soru...</h3>
+                <p>Eğer hayatının bir dönemini bir kitabın, büyüleyici bir hikayenin veya bir animasyonun içinde yaşama şansın olsaydı, o hangi dünya ya da hangi kitap olurdu? Tamamen merakımdan soruyorum... ✨</p>
+            </div>
+
+            <div class="movie-card">
+                <h4>🎬 Senin İçin Bir Kült Öneri: Coraline</h4>
+                <p>Disney'in o alışılmış pembe toz bulutlarından çok uzak, harika bir stop-motion başyapıtı. Gizemli kapıların ardındaki büyüleyici dünyaları seversin diye düşündüm. Yeni yaşında belki de harika bir sinema akşamı yapıp bunu izlersin.</p>
+            </div>
+        </div>
+
+        <!-- 3. BÖLÜM: ZARİF KUTLAMA NOTU -->
+        <div class="section-message">
+            <p class="letter-text">İyi ki doğdun panpicim... 💜 Hayatıma girdiğin ve bu güzel bağı paylaştığın için çok şanslıyım. İyi ki seninle tanışmışım; varlığın, samimiyetin ve bitmek bilmeyen o güzel enerjin sayesinde benim için dünya gerçekten çok daha güzel, çok daha renkli bir hale geliyor. Seninle konuşmak, hayalleri, filmleri, kitapları ya da en sıradan şeyleri bile paylaşmak benim için her zaman çok özel ve kıymetli. Yeni yaşının sana en büyük mutlulukları, huzuru ve tüm güzellikleri getirmesini diliyorum. Yüzündeki o samimi tebessümün hiçbir zaman eksik olmasın. İyi ki varsın, hep ol... ✨</p>
+            <p class="signature">İyi ki Varsın! 💜</p>
+        </div>
+
+        <footer>
+            Made with 💜 for Şule • 2026
+        </footer>
+
+    </div>
+
+</body>
+</html>
